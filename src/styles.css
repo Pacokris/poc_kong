@@ -1,0 +1,116 @@
+/* Global Styles */
+h1 {
+    color: #369;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 125%;
+}
+
+h2, h3 {
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+body {
+    margin: 2em;
+}
+
+body, input[text], button {
+    color: #888;
+    font-family: Cambria, Georgia;
+}
+
+a {
+    cursor: pointer;
+    cursor: hand;
+}
+
+
+
+/* Navigation link styles */
+nav a {
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 4px;
+}
+
+nav a:visited, a:link {
+    color: #607D8B;
+}
+
+nav a:hover {
+    color: #039be5;
+    background-color: #CFD8DC;
+}
+
+nav a.active {
+    color: #039be5;
+}
+
+/* everywhere else */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Use box-sizing:border-box across the board, as per
+https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+    box-sizing: border-box;
+}
+
+/* Use flexbox so that our grid displays legibly on mobile. */
+.flex-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+@media (min-width: 800px) {
+    .flex-column-half {
+        flex-basis: 49%;
+        max-width: 49%;
+        padding-right: 1%;
+    }
+
+    .flex-column-fourth {
+        flex-basis: 24%;
+        max-width: 24%;
+        padding-right: 1%;
+    }
+}
+
+.align-center {
+    text-align: center;
+}
+
+ul.action-button-list {
+    padding: 0;
+}
+
+ul.action-button-list li {
+    list-style: none;
+    margin: 10px 0px;
+}
+
+ul.action-button-list button {
+    width: 170px;
+    padding: 6px;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

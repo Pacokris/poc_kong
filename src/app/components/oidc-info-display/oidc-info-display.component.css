@@ -1,0 +1,12 @@
+.token-info-grid {
+    max-width: 900px;
+    position: relative;
+}
+
+.token-info-grid mat-card {
+    margin:10px;
+}
+
+.token-info-grid pre{
+    overflow: auto;
+}
